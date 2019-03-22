@@ -8,6 +8,6 @@ function Circle(radius) {
   }
 }
 
-circle = new Circle(1);
+let circle = new Circle(1);
 circle.draw();
 console.log(circle.radius);
