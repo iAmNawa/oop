@@ -1,7 +1,6 @@
 // Constructor Function
-console.log(this)
 function Circle(radius) {
-  console.log(this)
+  console.log(radius)
   this.radius = radius;
   this.draw = function() {
     console.log('draw')
