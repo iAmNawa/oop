@@ -1,6 +1,10 @@
 let person = { name: 'Paul', age: 31 };
-console.log(person);
-let objectBase = Object.getPrototypeOf(person);
-console.log(objectBase);
-let descriptor = Object.getOwnPropertyDescriptor(objectBase, 'toString');
-console.log(descriptor);
+Object.defineProperty(person, 'name', {
+  writable: false,
+  enumerable: false
+});
+
+person.name = 'Jon';
+person.age = 51;
+
+console.log(Object.keys(person))
