@@ -13,4 +13,7 @@ Circle.prototype.sketch = function() {
 
 const c1 = new Circle(5);
 
+// Returns instance members
 console.log(Object.keys(c1));
+// Returns all members
+for (let key in c1) console.log(key);
